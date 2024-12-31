@@ -36,3 +36,18 @@
 - **Synchronization:**
   - **Network Time Protocol (NTP):** Use NTP to synchronize clocks across devices.
   - **Timestamping:** Timestamp audio packets to ensure proper sequencing.
+
+## Key Tools and Libraries
+- **WebRTC:** For real-time audio streaming and peer-to-peer connections.
+- **Signaling Server:** Custom implementation or use existing solutions like Socket.IO for signaling.
+- **Media Server:** Use open-source solutions like Kurento or Janus for audio mixing and streaming.
+
+## Summary
+**Flow of Data:**
+1. **Connection Setup:** Users connect to the signaling server to establish a connection.
+2. **Audio Streaming:** Audio streams are sent to the media server, mixed, and the combined output is sent back to users.
+
+**Tools and Libraries:**
+- **WebRTC:** Real-time audio streaming.
+- **Signaling Server:** Manages connection setup.
+- **Media Server:** Mixes and streams audio.
